@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JavaScript Outputs</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+		margin: 0;
+		padding: 0;
+		background-color: #CDB0EE;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		}
+			h1 {
+		text-align: center;
+		font-size: 36px;
+		margin-top: 50px;
+	}
+
+	h2 {
+		font-size: 24px;
+		margin-top: 30px;
+	}
+
+	p {
+		font-size: 18px;
+		line-height: 1.5;
+		margin-top: 10px;
+		margin-bottom: 20px;
+	}
+
+	button {
+		padding: 10px 20px;
+		font-size: 18px;
+		background-color: #white;
+		color: #black;
+		border: none;
+		border-radius: 4px;
+		cursor: pointer;
+	}
+
+	button:hover {
+		background-color: #3e8e41;
+	}
+
+	#output {
+		font-size: 24px;
+		font-weight: bold;
+		margin-top: 20px;
+		padding: 10px;
+		background-color: #fff;
+		border: 2px solid #4CAF50;
+		border-radius: 4px;
+	}
+	</style>
+</head>
+<body>
+	<div class="container-fluid">
+		<h1>JavaScript Outputs</h1>
+		<p>JavaScript is a popular programming language used for creating interactive web pages. It can be used to produce different types of outputs:</p>
+			<h2>1. Alert Box</h2>
+
+	<p>An alert box is a dialog box that displays a message to the user. It is often used to provide a warning or to prompt the user for input.</p>
+
+	<button onclick="alert('Hello, World!')">Click me!</button>
+
+	<p>In the above example, clicking the button will display an alert box with the message "Hello, World!"</p>
+
+	<h2>2. innerHTML( );</h2>
+
+	<p>The innerHTML property specifies or returns the HTML content of an element (inner HTML).</p>
+
+	<div id="consoleOutput"></div>
+
+	<script>
+		document.getElementById('consoleOutput').innerHTML = 'This is a message written using innerHTML().';
+	</script>
+
+	<p>In the above example, the message "This is a message written using innerHTML()." will be displayed inside the &lt;div&gt; element using innerHTML().</p>
+
+	<h2>3. Document Write</h2>
+
+	<p>JavaScript is a popular programming language used for creating interactive web pages. It can be used to produce different types of outputs.</p>
+
+	<button onclick="document.write('Hello, World!')">Click me!</button>
+
+	<p>In the above example, clicking the button will lead you to a page where "Hello, World!" is added to the document using document.write.</p>
+
+	<h2>4. Document Write using innerHTML();</h2>
+
+	<button onclick="document.getElementById('output').innerHTML = 'Hello, World!'">Click me!</button>
+	<div id="output"></div>
+
+	<p>In the above example, clicking the button will display the message "Hello, World!" inside the
